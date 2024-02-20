@@ -1,14 +1,18 @@
 # Voiceflow Interview Fullstack Project 💬
 
-Welcome to Voiceflow's Frontend Project!
+Welcome to Voiceflow's Fullstack Project!
 
 Congrats on making it to this part of the interview process. 🥳
 
 The goal of this project is to look into an existing codebase and understanding how to optimize and improve it in terms of performance and code quality.
 
-The frontend and backend were intentionally written with many issues. Please be opinionated and make as many drastic changes as you want as long as requirements are met.
+The frontend and backend were intentionally written with many issues and poor performance. Please be VERY opinionated and make as many drastic changes as you want as long as requirements are met.
 
-The state of this codebase does not at all represent the standard and quality of the actual Voiceflow codebase 😅.
+The state of this codebase does not at all represent the standard and quality of the actual Voiceflow codebase 😅. I apologize ahead of time for the application being so ugly and badly written.
+
+Please try to limit yourself to a maximum of 3 hours for this task.
+
+<img width="812" alt="Screenshot 2024-02-20 at 4 33 56 PM" src="https://github.com/voiceflow/creator-app/assets/5643574/a2a2afa5-c4d0-4115-9b06-b8747092401f" />
 
 ## Setup 📦
 
@@ -29,19 +33,41 @@ yarn dev
 ```
 
 # Overview ℹ️
+You are creating an content management system for intents, which are actions a customer could take.
+Each action comes with a name, description, and utterances - which are example phrases for the intent.
 
+You are inheriting a project created by a previous developer.
+Unfortunately, it is mandated from higher powers that your database HAS to be a static JSON file, and the format has to stay the same.
+The frontend function has to remain the same:
+- be able to view all intents in a single, scrollable, list
+- be able to edit intent name and description
+- perform CRUD operation on intent utterances
+
+However users are reporting massive issues with the app:
+- It is very slow to load
+- It lags their computer when they scroll
+- Editing anything is laggy, sometimes the text is inconsistent when typing in the middle
+- Larger sets of intents are causing the entire app to crash
+
+Your job is to take this existing codebase and optimize it for a better user experience.
+You are free to edit anything in the frontend and backend, as long as the requirements are met.
+
+There are two data sets in `apps/backend`: `db-small` (1000 intents) and `db-large` (100000 intents).
+Once `db-small` is working it is recommended that you try and see if you can optimize for `db-large` as well.
+To switch over, just edit `apps/backend/config.ts`.
 
 # Requirements
 
-- do not write tests or add test suites (keep the scope of the project down)
-- you can add any third party libraries
+- tests *are not* required (keep the scope of the project down)
+- you can add or use any third party libraries
 - the types in core-lib can not be changed, they represent the database format
 
 ### frontend
 - must use exclusively react as framework
-- CSS styling can change, but all functionality must be preserved. No extra points for looking nice!
-- all intent state must be reflected in redux as source of truth
-- redux heartbeat interval and action must be preserved
+- CSS styling can change, but the existing DOM element structure must be preserved. No extra points for looking nice!
+- all intent state must be reflected in **redux** at some point as source of truth, even if you decide to use other state management.
+	- it is okay if the update to the redux state is delayed or deferred, but it must be eventually consistent
+	- pretend there is a library that syncs your redux state with others for realtime collaboration
 
 ### backend
 - must use nestJS + express as framework
@@ -49,18 +75,6 @@ yarn dev
 	- assume there are other clients interacting with the same data
 - the format of the `*.database.json` must be preserved, typings must stay the same
 - do not commit any changes to `*.database.json`
-
-# Tips 📝
-
-Unless you get fancy and go off the rails (which isn't a bad thing 👍) this project takes around ~1-3 hours if you are familiar with the stack. Keep in mind this isn't a race to get it done - it's about getting it done well.
-
-- use Typescript proficiently
-- use repeatable, scalable patterns
-- make modular, nicely separated components
-- account for edge cases
-- manage sensitive data securely
-- manage data passing properly
-- set up a good build process
 
 # Submission
 

@@ -16,12 +16,12 @@ export class IntentService {
     return JSON.parse(intents);
   }
 
-  updateIntent(assistantID: string, intentID: string, payload: Partial<Intent>) {
+  updateIntent(assistantID: string, intentID: string, payload: Partial<Intent>, clientID: string) {
     const intents = this.getIntents();
 
     const intent = intents.find((intent) => intent.id === intentID && intent.assistantID === assistantID);
 
-    Object.assign(intent, payload, { updatedAt: new Date().toISOString() });
+    Object.assign(intent, payload, { updatedAt: new Date().toISOString(), clientID });
 
     fs.writeFileSync(this.getIntentPath(), JSON.stringify(intents, null, 2));
 

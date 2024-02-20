@@ -1,13 +1,42 @@
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0px;
 }
 
 .intent-container {
-  border-bottom: 1px solid #ccc;
-  padding: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 600px;
+  box-shadow: 3px 3px 3px 3px #ccc;
 }
 
 .flex-input {
   display: flex;
   gap: 12px;
+}
+
+/* sticky */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  z-index: 100;
+}
+
+label {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.intent-container input {
+  width: 100%;
+  box-shadow: 3px 3px 3px 3px #ccc;
 }

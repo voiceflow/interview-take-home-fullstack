@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "TSX_COMPILE_ON_ERROR=true ESLINT_NO_DEV_ERRORS=true DISABLE_ESLINT_PLUGIN=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint --fix .",

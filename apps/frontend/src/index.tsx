@@ -1,4 +1,5 @@
 import './index.css';
+import './config';
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';

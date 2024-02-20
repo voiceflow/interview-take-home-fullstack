@@ -1,8 +1,8 @@
 [
   {
     "id": "72f6fa41-c330-462f-8e86-493f64fb4547",
-    "name": "acquiro amplitudo contra",
-    "description": "Reprehenderit dolor angustus viscus.",
+    "name": "Buy Hot Chocolate",
+    "description": "The user wants to buy some hot chocolate.",
     "createdAt": "2023-05-02T02:58:19.740Z",
     "updatedAt": "2024-02-19T09:41:59.482Z",
     "createdBy": "6654931c-f799-41b6-b6ea-24e8d800d2b6",
@@ -10,24 +10,25 @@
     "assistantID": "1b98e31b-9c4f-4ce6-899e-2081ab1806c7"
   },
   {
-    "id": "48a38bde-95cb-47e9-9e4f-051e79d21df3",
-    "name": "cunabula custodia arceo",
-    "description": "Colligo vestigium coadunatio.",
-    "createdAt": "2023-03-12T02:15:08.460Z",
-    "updatedAt": "2024-02-20T05:15:54.412Z",
-    "createdBy": "53dee5a0-58d0-4b88-8fab-3cf5ba9194fa",
-    "updatedBy": "4aefb097-2b47-4463-b94a-97c38fea1428",
-    "assistantID": "1e3ae0a9-b7db-4523-900c-13593911a299"
-  },
-  {
     "id": "93e250e5-e511-411e-af2e-2b34938a04d1",
-    "name": "patior adipiscor advoco",
-    "description": "Cras vorax laborum vere ceno arto arbor audacia doloremque acquiro.",
+    "name": "Buy coffee",
+    "description": "The user is looking to buy a coffee drink.",
     "createdAt": "2024-01-11T15:15:04.168Z",
     "updatedAt": "2024-02-19T07:29:44.267Z",
     "createdBy": "81170813-cc9e-44e1-b643-11de01577618",
     "updatedBy": "5d58b837-86df-46ac-b806-7bcbdbcd3794",
     "assistantID": "0f64e000-7c2b-4fac-a70f-f08db223548c"
+  },
+  {
+    "id": "48a38bde-95cb-47e9-9e4f-051e79d21df3",
+    "name": "Upset customer",
+    "description": "The user is frustrated or upset with the bot.",
+    "createdAt": "2023-03-12T02:15:08.460Z",
+    "updatedAt": "2024-02-20T21:15:48.920Z",
+    "createdBy": "53dee5a0-58d0-4b88-8fab-3cf5ba9194fa",
+    "updatedBy": "4aefb097-2b47-4463-b94a-97c38fea1428",
+    "assistantID": "1e3ae0a9-b7db-4523-900c-13593911a299",
+    "clientID": "mk55d"
   },
   {
     "id": "93e250e5-e511-411e-af2e-2b34938a04d1",
