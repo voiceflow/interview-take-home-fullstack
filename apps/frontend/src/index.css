@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.intent-container {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+
+.flex-input {
+  display: flex;
+  gap: 12px;
+}

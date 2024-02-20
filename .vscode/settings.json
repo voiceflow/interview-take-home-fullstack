@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.runtime": "node",
+  "eslint.execArgv": ["--max_old_space_size=8192"],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.validate": ["markdown", "mdx", "javascript", "javascriptreact", "typescript", "typescriptreact"]
+}
