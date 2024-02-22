@@ -10,7 +10,7 @@ The frontend and backend were intentionally written with many issues and poor pe
 
 The state of this codebase does not at all represent the standard and quality of the actual Voiceflow codebase 😅. I apologize ahead of time for the application being so ugly and badly written.
 
-Please try to limit yourself to a maximum of 3 hours for this task.
+Please try to aim for around 3 hours to complete this task, if you feel strongly about anything you can take the additional time that you are comfortable with.
 
 <img width="812" alt="Screenshot 2024-02-20 at 4 33 56 PM" src="https://github.com/voiceflow/creator-app/assets/5643574/a2a2afa5-c4d0-4115-9b06-b8747092401f" />
 
@@ -79,6 +79,11 @@ To switch over, just edit `apps/backend/config.ts`.
 # Submission
 
 Send the link to your working repository to your recruiter's email. 
+
+Add the following Github accounts to your private repo:
+- **decathectzero**
+- **effervescentia**
+- **z4o4z**
 
 --- 
 
