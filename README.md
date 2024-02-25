@@ -64,10 +64,13 @@ To switch over, just edit `apps/backend/config.ts`.
 
 ### frontend
 - must use exclusively react as framework
-- CSS styling can change, but the existing DOM element structure must be preserved. No extra points for looking nice!
+- CSS styling can change, but the existing HTML DOM element structure of all list items must be preserved. No extra points for looking nice!
+	- this does not apply to the React Virtual DOM, feel free to compose React however you want
+	- functionality should stay consistent, such as infinite scrolling.
 - all intent state must be reflected in **redux** at some point as source of truth, even if you decide to use other state management.
 	- it is okay if the update to the redux state is delayed or deferred, but it must be eventually consistent
 	- pretend there is a library that syncs your redux state with others for realtime collaboration
+	- the typing/shape of the Redux state can not change, but anything else including reducers, thunks, actions, etc can be changed.
 
 ### backend
 - must use nestJS + express as framework
