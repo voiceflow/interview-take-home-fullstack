@@ -20,10 +20,13 @@ Make sure you have [Node.js](https://nodejs.org/) and [yarn](https://yarnpkg.com
 
 Clone this repository **(keep your repo private)**.
 
-> to install all dependencies (node_modules) :
+> to install all dependencies (node_modules), and build typings :
 
 ```
 yarn install
+
+cd packages/core-lib
+yarn lib:build
 ```
 
 > to start the frontend and backend servers :
